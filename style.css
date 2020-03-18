@@ -1,0 +1,23 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Be Vietnam",sans-serif;
+    font-size: 16px;
+}
+.nav__controls {
+    width: 70%;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav__modal ul {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+nav__modal li {
+    text-align: center;   
+    list-style: none;
+}
