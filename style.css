@@ -14,7 +14,7 @@ body {
 }
 
 .nav__modal {
-    display: flex;
+    display: /*flex */ none;
     flex-direction: column;
     border: 1px solid blueviolet;
     box-shadow: 1px 1px 1px 1px blueviolet;
@@ -28,6 +28,11 @@ body {
   }
   a {
     text-decoration: none;
+  }
+  .illustration__img {
+    width: 80%;
+    display: block;
+    margin: auto;
   }
 /*
 .nav__modal ul {

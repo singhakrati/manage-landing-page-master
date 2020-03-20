@@ -1,4 +1,5 @@
 # Frontend Mentor - Manage landing page
+### live-preview: https://chamumutezva.github.io/manage-landing-page-master/
 
 ![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)
 
