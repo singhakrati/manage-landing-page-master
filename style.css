@@ -54,7 +54,7 @@ a {
 }
 
 .illustration__details {
-  width: 320px;
+  width: 85.5%;
   margin: auto;
   text-align: center;
 }
@@ -68,17 +68,22 @@ a {
   padding: 12px 28px;
 }
 
-.illustration::before {
- /* position: absolute;
-  top: -25%;
-  left: 50%;
+.illustration__details::before {
+  position: absolute;
+  top: 86%;
+  left: 74%;
   content: ' ';
-  width: 20%;
-  height: 30%;
+  width: 48%;
+  height: 42%;
   z-index: -1;
-  border-radius: 32%;
+  border-radius: 23%;
   background-color: hsl(13, 100%, 96%);
-  transform: rotate(45deg);*/
+  transform: rotate(45deg);
+}
+.main {
+  width: 85.5%;
+  text-align: center;
+  margin: auto;
 }
 
 /*
