@@ -1,39 +1,86 @@
 body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Be Vietnam",sans-serif;
-    font-size: 16px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 16px;
 }
+
+header::before {
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  content: ' ';
+  width: 55%;
+  height: 88%;
+  z-index: -1;
+  border-radius: 32%;
+  background-color: hsl(13, 100%, 96%);
+  transform: rotate(45deg);
+}
+
 .nav__controls {
-    width: 70%;
-    margin: 40px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  width: 77%;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .nav__modal {
-    display: /*flex */ none;
-    flex-direction: column;
-    border: 1px solid blueviolet;
-    box-shadow: 1px 1px 1px 1px blueviolet;
-    width: 78%;
-    margin: auto;
-    text-align: center;
-    padding: 45px 15px;
-  }
-  .nav__modal__items {
-    padding-bottom: 30px;
-  }
-  a {
-    text-decoration: none;
-  }
-  .illustration__img {
-    width: 80%;
-    display: block;
-    margin: auto;
-  }
+  display: /*flex */
+  none;
+  flex-direction: column;
+  border: 1px solid blueviolet;
+  box-shadow: 1px 1px 1px 1px blueviolet;
+  width: 78%;
+  margin: auto;
+  text-align: center;
+  padding: 45px 15px;
+}
+
+.nav__modal__items {
+  padding-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.illustration__img {
+  width: 85.5%;
+  display: block;
+  margin: auto;
+}
+
+.illustration__details {
+  width: 320px;
+  margin: auto;
+  text-align: center;
+}
+
+.illustration__btn {
+  background-color: hsl(12, 88%, 59%);
+  background-color: hsl(12, 88%, 59%);
+  border-radius: 50px;
+  color: white;
+  font-weight: 700;
+  padding: 12px 28px;
+}
+
+.illustration::before {
+ /* position: absolute;
+  top: -25%;
+  left: 50%;
+  content: ' ';
+  width: 20%;
+  height: 30%;
+  z-index: -1;
+  border-radius: 32%;
+  background-color: hsl(13, 100%, 96%);
+  transform: rotate(45deg);*/
+}
+
 /*
 .nav__modal ul {
     text-align: center;
