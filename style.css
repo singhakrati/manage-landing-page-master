@@ -4,9 +4,17 @@ body {
   margin: 0;
   font-family: "Be Vietnam", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
-header::before {
+header {
+  background-image: url("images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: top -37% right 155%;
+  background-size: 110%;
+}
+
+/*header::before {
   position: absolute;
   top: -25%;
   left: 50%;
@@ -17,7 +25,7 @@ header::before {
   border-radius: 32%;
   background-color: hsl(13, 100%, 96%);
   transform: rotate(45deg);
-}
+}*/
 
 .nav__controls {
   width: 77%;
@@ -46,7 +54,14 @@ header::before {
 a {
   text-decoration: none;
 }
-
+.illustration {
+  padding-bottom: 100px;
+  background-image: url("images/bg-tablet-pattern.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 78%;
+  background-position: right -191% top 93%;
+}
 .illustration__img {
   width: 85.5%;
   display: block;
@@ -57,18 +72,30 @@ a {
   width: 85.5%;
   margin: auto;
   text-align: center;
+  
 }
 
-.illustration__btn {
-  background-color: hsl(12, 88%, 59%);
+.illustration__btn {  
   background-color: hsl(12, 88%, 59%);
   border-radius: 50px;
   color: white;
   font-weight: 700;
   padding: 12px 28px;
+  border: none;
+}
+.main__lists__item h3 {
+  background-color: hsl(13, 100%, 95%);
+  padding: 0.5rem;
+  width: 78%;
+}
+.main__lists__item span {
+  background-color: burlywood;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;  
+  margin-left: 0;
 }
 
-.illustration__details::before {
+/*.illustration__details::before {
   position: absolute;
   top: 86%;
   left: 74%;
@@ -79,12 +106,14 @@ a {
   border-radius: 23%;
   background-color: hsl(13, 100%, 96%);
   transform: rotate(45deg);
-}
+}*/
+
 .main {
   width: 85.5%;
   text-align: center;
   margin: auto;
 }
+
 
 /*
 .nav__modal ul {
