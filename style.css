@@ -83,16 +83,24 @@ a {
   padding: 12px 28px;
   border: none;
 }
-.main__lists__item h3 {
-  background-color: hsl(13, 100%, 95%);
+.main__lists__item h4 {
+  background-color: hsl(12, 100%, 95%);
   padding: 0.5rem;
-  width: 78%;
+  width: 98%;
+  position: relative;
+  border-bottom-left-radius: 25%;
+  border-top-left-radius: 25%;
+  margin: auto;
 }
-.main__lists__item span {
-  background-color: burlywood;
-  padding: 0.5rem 1rem;
-  border-radius: 50%;  
-  margin-left: 0;
+
+.heading1 {
+  background-color: hsl(12, 88%, 59%);
+  padding: 0.5rem 1.5rem;
+  border-radius: 40%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  margin-right: 33%;
 }
 
 /*.illustration__details::before {
@@ -107,7 +115,9 @@ a {
   background-color: hsl(13, 100%, 96%);
   transform: rotate(45deg);
 }*/
-
+.heading2 {
+  margin-left: 19%;
+}
 .main {
   width: 85.5%;
   text-align: center;
