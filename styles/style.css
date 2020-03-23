@@ -49,8 +49,7 @@ li {
 }
 
 a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none;  
 }
 
 .illustration {
@@ -180,6 +179,10 @@ form {
 .footerWrapper {
   width: 85.5%;
   margin: auto;
+}
+
+footer a{
+  color: white;
 }
 
 .footer__outro__details {
