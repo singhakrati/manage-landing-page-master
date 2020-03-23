@@ -139,3 +139,22 @@ a {
     display: block;
     margin: auto auto 90px;
 }
+.footer__outro {
+  background-color: hsl(233, 12%, 13%);
+}
+.footer__outro--email {
+  padding: 12px 28px;
+  border-radius: 21px;
+  border: none;
+}
+form {
+  padding-top: 50px;
+  text-align: center;
+}
+.footerWrapper {
+  width: 85.5%;
+  margin: auto;
+}
+.footer__outro__details {
+  color: white;
+}
