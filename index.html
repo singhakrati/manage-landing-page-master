@@ -96,12 +96,12 @@
     </div>
 
     <div class="main__testimonials">
-      <h4>What they’ve said</h4>
+      <h2>What they’ve said</h2>
 
-  
-        <div class="cards">
+      <div class="swiper-container">
+        <div class="cards swiper-wrapper">
 
-          <div class="cards__item swiper-slider">
+          <div class="cards__item swiper-slide">
             <img class="cards__item__img" src="images/avatar-anisha.png" alt="">
             <h5 class="cards__item__title">
               Anisha Li
@@ -112,7 +112,7 @@
             </p>
           </div>
 
-          <div class="cards__item">
+          <div class="cards__item swiper-slide">
             <img class="cards__item__img" src="images/avatar-ali.png" alt="">
             <h5 class="cards__item__title">
               Ali Bravo
@@ -124,7 +124,7 @@
             </p>
           </div>
 
-          <div class="cards__item">
+          <div class="cards__item swiper-slide">
             <img class="cards__item__img" src="images/avatar-richard.png" alt="">
             <h5 class="cards__item__title">
               Richard Watts
@@ -135,7 +135,7 @@
             </p>
           </div>
 
-          <div class="cards__item">
+          <div class="cards__item swiper-slide">
             <img class="cards__item__img" src="images/avatar-shanai.png" alt="">
             <h5 class="cards__item__title">
               Shanai Gough
@@ -145,10 +145,19 @@
               from anywhere. It keeps the whole team in-sync without being intrusive.”
             </p>
           </div>
-          <input class="btnPrimary" type="button" value="Get Started">
+
         </div>
-      
+        <!--end swiper-wrapper-->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons 
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>-->
+
+      </div>
+      <!--swiper-container-->
+      <input class="btnPrimary" type="button" value="Get Started">
     </div>
+    <!--main__testimonials-->
 
   </main>
 
@@ -215,7 +224,30 @@
 
   <script src="main.js"></script>
   <script src="node_modules/swiper/js/swiper.min.js"></script>
- 
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      // loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      /*  scrollbar: {
+            el: '.swiper-scrollbar',
+        }, */
+    })
+  </script>
+
 </body>
 
 </html>
