@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css?family=Be+Vietnam:400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Be+Vietnam:400,500,700,800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Manage landing page</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="node_modules/swiper/css/swiper.min.css">
@@ -18,8 +18,12 @@
   <header>
     <nav class="nav">
       <div class="nav__controls">
-        <img src="images/logo.svg" alt="">
-        <img class="openClose" src="images/icon-hamburger.svg" alt="">
+        <img class="logoImg" src="images/logo.svg" alt="">
+        <div class="nav__controls__openClose">
+          <img class="openClose" src="images/icon-hamburger.svg" alt="">
+          <input class="btnPrimary  nav__btn" type="button" value="Get Started">
+        </div>
+        
       </div>
       <div class="nav__modal">
         <div class="nav__modal__items">
@@ -226,9 +230,30 @@
   <script src="node_modules/swiper/js/swiper.min.js"></script>
   <script>
     var mySwiper = new Swiper('.swiper-container', {
-      // Optional parameters
+
+      slidesPerView: 1,
+      spaceBetween: 10,
+
       direction: 'horizontal',
-      // loop: true,
+      //  loop: true,
+
+      breakpoints: {
+        // when window width is >= 320px
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        960: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        1281: {
+          slidesPerView: 4,
+          spaceBetween: 40
+        }
+      },
 
       // If we need pagination
       pagination: {
@@ -240,6 +265,8 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+
+
 
       // And if we need scrollbar
       /*  scrollbar: {
