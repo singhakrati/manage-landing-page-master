@@ -106,7 +106,7 @@ a {
   border: none;
 }
 
-.main__lists__item h4 {
+.mainWrapper__lists__item h4 {
   background-color: hsl(12, 100%, 95%);
   padding: 0.5rem;
   width: 98%;
@@ -265,6 +265,10 @@ footer a {
 }
 
 @media only screen and (min-width: 980px) {
+  p {
+    text-align: left;
+    font-size: 1.6rem;
+  }
   .openClose {
     display: none;
   }
@@ -283,6 +287,42 @@ footer a {
   }
   .nav__modal__items {
     padding-bottom: 0px;
+  }
+  header {
+    background-position: top -33% left 111%;
+    background-size: 43%;
+  }
+  .main {
+    width: 100%;
+  }
+  .mainWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .illustration {
+    margin-top: 145px;
+    padding-bottom: 100px;
+    background-image: none;
+  }
+  .illustration__details {
+    width: 35%;
+    margin: 0 9%;
+  }
+  .mainWrapper__intro {
+    margin: 45px;
+    background-image: url("../images/bg-tablet-pattern.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 78%;
+    background-position: left -191% top 93%;
+    margin: auto
+  }
+  .illustration__details h1 {
+    text-align: left;
+    font-size: 3.6rem;
+  }
+  .mainWrapper__lists__item {
+    margin: 55px;
   }
 }
 
