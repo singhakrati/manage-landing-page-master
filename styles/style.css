@@ -265,9 +265,14 @@ footer a {
 }
 
 @media only screen and (min-width: 980px) {
+  .nav__controls {
+    width: 90%;
+    margin: 0 0 40px 84px;
+    padding-top: 70px;
+  }
   p {
     text-align: left;
-    font-size: 1.6rem;
+    /* font-size: 1.6rem;*/
   }
   .openClose {
     display: none;
@@ -281,16 +286,16 @@ footer a {
     flex-direction: row;
     justify-content: space-around;
     position: absolute;
-    top: 24px;
-    left: 25%;
+    top: 57px;
+    left: 28%;
     box-shadow: none;
   }
   .nav__modal__items {
     padding-bottom: 0px;
   }
   header {
-    background-position: top -33% left 111%;
-    background-size: 43%;
+    background-position: top 332% left 157%;
+    background-size: 63%;
   }
   .main {
     width: 100%;
@@ -298,6 +303,11 @@ footer a {
   .mainWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-image: url("../images/bg-tablet-pattern.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 48%;
+    background-position: left -61% top 313%;
   }
   .illustration {
     margin-top: 145px;
@@ -310,23 +320,92 @@ footer a {
   }
   .mainWrapper__intro {
     margin: 45px;
-    background-image: url("../images/bg-tablet-pattern.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 78%;
-    background-position: left -191% top 93%;
-    margin: auto
   }
   .illustration__details h1 {
     text-align: left;
-    font-size: 3.6rem;
+    font-size: 2.4rem;
   }
   .mainWrapper__lists__item {
     margin: 55px;
   }
+  .mainWrapper__lists__item h4 {
+    background-color: transparent;
+    width: 98%;
+  }
+  .mainWrapper__lists__item p {
+    padding-right: 50px;
+  }
+  .mainWrapper__intro__title {
+    text-align: left;
+    font-size: 2rem;
+    margin-left: 100px;
+  }
+  .mainWrapper__intro__details {
+    margin-left: 100px;
+    padding-right: 15px;
+  }
+  .main__testimonials {}
 }
 
 @media only screen and (min-width: 1281px) {
+  .mainWrapper__intro__title {
+    font-size: 3rem;
+  }
+  .nav__modal {
+    width: 45%;
+    left: 25%;
+  }
+  .nav__controls {
+    margin: 0 160px 40px;
+    padding-top: 70px;
+  }
+  .mainWrapper__intro__details {
+    padding-right: 145px;
+  }
+  .mainWrapper__lists__item p {
+    margin-left: 110px;
+  }
+  .mainWrapper__lists__item h4 {
+    font-size: 1.5rem;
+  }
+  .illustration__details h1 {
+    font-size: 3.6rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  .illustration__details {
+    text-align: left;
+  }
+  .illustration__details__info {
+    padding-right: 132px;
+  }
+  .btnPrimary {
+    padding: 13px 40px;
+  }
+  .nav__btn {
+    margin-right: 85px;
+  }
+  .illustration__btn {
+    margin-top: 25px;
+  }
+  .heading2 {
+    margin-left: -14%;
+  }
+  .main__testimonials__title {
+    font-size: 3rem;
+  }
+  .cards__item {    
+    margin: 7% auto;   
+}
+.cards__item__details {  
+  font-size: 1rem;
+  width: 90%;  
+  text-align: center;  
+}
+.cards__item__title {
+  font-size: 1.5rem; 
+}
   .swiper-slide {
     /* flex-shrink: 1 !important; */
   }
