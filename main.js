@@ -11,11 +11,13 @@ openClose.addEventListener("click", function(){
       console.log("tears")
       openClose.setAttribute('src', srcClose)
       modal.style.display = "flex";
-      body.style.backgroundColor = ("hsl(227, 12%, 61%)")
+      body.classList.add("hide");
+     // body.style.backgroundColor = ("hsl(227, 12%, 61%)")
     } else 
     {
         openClose.setAttribute('src', srcOpen)
         modal.style.display = "none";
-        body.style.backgroundColor = "transparent";
+       // body.style.backgroundColor = "transparent";
+       body.classList.remove("hide");
     }
 })
