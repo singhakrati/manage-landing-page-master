@@ -69,10 +69,6 @@ header {
   opacity: 0.5;
 }
 
-.footer__outro__socials img:hover {
-  filter: invert(119%) sepia(18%) saturate(200%) hue-rotate(271deg) brightness(180%) contrast(213%);
-}
-
 .btnPrimary:hover {
   box-shadow: 1px 1px 2px 3px var(--btn-bg-color);
 }
@@ -205,8 +201,8 @@ img.logoImg {
 
 .cards__item__details {
   line-height: 2em;
-  font-size: small;
-  width: 80%;
+ /* font-size: small;*/
+  width: 100%;
   margin: auto;
   padding-bottom: 44px;
 }
@@ -277,6 +273,10 @@ footer a {
   margin-bottom: 20px;
 }
 
+.footer__outro__details a:hover {
+  color: var(--btn-bg-color);
+}
+
 .footer__outro__socials {
   padding-top: 15px;
 }
@@ -290,6 +290,10 @@ footer a {
 .footer__outro__socials img {
   width: 32px;
   /* filter: invert(119%) sepia(18%) saturate(200%) hue-rotate(271deg) brightness(180%) contrast(213%);*/
+}
+
+.footer__outro__socials img:hover {
+  filter: invert(49%) sepia(100%) saturate(56%) hue-rotate(323.1deg) brightness(76.4%) contrast(627%);  
 }
 
 .footer__outro__logo {
