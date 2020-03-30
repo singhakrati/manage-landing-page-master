@@ -182,7 +182,8 @@ img.logoImg {
 }
 
 .main__testimonials__title {
-  font-size: 2rem;
+  font-size: 1.9rem;
+  margin: 60px auto;
 }
 
 .cards__item {
