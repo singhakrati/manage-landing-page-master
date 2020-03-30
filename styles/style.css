@@ -37,6 +37,7 @@ header {
 .hide {
   background: linear-gradient(hsl(0, 0%, 98%), hsl(227, 12%, 61%));
   overflow-y: hidden;
+
 }
 
 /*navigation controls */
@@ -201,10 +202,12 @@ img.logoImg {
 
 .cards__item__details {
   line-height: 2em;
- /* font-size: small;*/
-  width: 100%;
+ /* font-size: small;
+  width: 100%;*/
   margin: auto;
   padding-bottom: 44px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .footer__intro {
@@ -482,7 +485,7 @@ footer a {
   .footer__intro__title {
     padding-top: 0;
     text-align: left;
-    margin-left: 160px;
+    margin-left: 95px;
   }
   .swiper-slide {
     /* flex-shrink: 1 !important; */
@@ -516,6 +519,7 @@ footer a {
   }
   .footer__intro--btn {
     margin-top: 53px;
+    margin-right: 90px;
   }
 }
 
