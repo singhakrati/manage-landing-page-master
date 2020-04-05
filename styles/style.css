@@ -185,6 +185,9 @@ img.logoImg {
   font-size: 1.9rem;
   margin: 60px auto;
 }
+.cards:hover {
+cursor: move;
+}
 
 .cards__item {
   width: 83%;
