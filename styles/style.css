@@ -185,8 +185,9 @@ img.logoImg {
   font-size: 1.9rem;
   margin: 60px auto;
 }
+
 .cards:hover {
-cursor: move;
+  cursor: move;
 }
 
 .cards__item {
@@ -346,6 +347,9 @@ footer a {
   }
   .illustration__img, .illustration__details {
     width: 40%;
+  }
+  .nav__modal {
+    display: flex !important;
   }
 }
 
